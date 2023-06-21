@@ -4,9 +4,12 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Labs
+  - caption: Prediction
     chapters:
-      - file: hello-colab
-      - file: kmeans
+      - file: prediction/hello-colab
+      - file: prediction/prediction-machines
+      - file: prediction/kmeans
+  - caption: Neural Networks
+    chapters:
       - file: cat-dog/transfer_learning
       - file: cat-dog/tflite_catdog
