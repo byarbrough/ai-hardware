@@ -4,11 +4,9 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Course Info
+  - caption: Labs
     chapters:
-      - file: faq
-  - caption: Readings
-    chapters:
-      - file: markdown
-      - file: notebooks
-      - file: markdown-notebooks
+      - file: hello-colab
+      - file: kmeans
+      - file: cat-dog/transfer_learning
+      - file: cat-dog/tflite_catdog
