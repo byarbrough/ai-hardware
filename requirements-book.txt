@@ -1,3 +1,4 @@
+# Requirements for building the jupyter book
 jupyter-book
 pre-commit
 # Uncomment if using mermaid diagrams
