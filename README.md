@@ -1,16 +1,23 @@
-# Jupyter Book Template for GitHub Pages
+# ECE 495: AI Hardware Applications
 
-A simple demo of how to deploy a [Jupyter Book](https://jupyterbook.org/en/stable/intro.html) static website to [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages) that is automatically built with [GitHub Actions](https://docs.github.com/en/actions).
+**Live website:** https://usafa-ece.github.io/ai-hardware
 
-Pages are deployed to `<username>.github.io/<repository-name>`. The live example of this demo is at https://usafa-ece.github.io/jupyterbook-template/
+Contains all course code and the [Jupyter Book](https://jupyterbook.org/en/stable/intro.html) static website to [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
+that is automatically built with [GitHub Actions](https://docs.github.com/en/actions).
 
-- Recommend reading [Structure the Table of Contents](https://jupyterbook.org/en/stable/structure/toc.html) for the `book/_toc.yml` file
-- Recommend reading [Markdown files](https://jupyterbook.org/en/stable/file-types/markdown.html) in Jupyter Books
-- Recommend reading [Configuration reference](https://jupyterbook.org/en/stable/customize/config.html) for the `book/_config.yml` file
+## Using for class
 
-## How it works
+Browsing the website will show *most* of the content. The Jupyter Notebooks can be easily opened in Google Colab with the launch button:rocket: at the top right of the page.
+But there are a few lessons where there is additional code outside of the Jupyter Notebooks. In those instances, you can do any one of the following:
 
-This repository uses the strategy of [Publishing from a branch](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch) to deploy the static site.
+1. Shallow clone of the repository, using the `--depth 1` flag.
+2. Fork the repository to your personal account (and periodically fetch updates).
+3. Download the relevant files as a zip.
+
+## Contributing to the site
+
+This repository uses the strategy of [Publishing from a branch](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch)
+to deploy the static site.
 
 It has two branches:
 
@@ -24,26 +31,13 @@ That workflow follows the instructions in `.github/workflows/deploy.yml` to run 
 
 GitHub automatically deploys whatever `index.html` file it finds at the root of `gh-pages` **after** you tell it to do so in settings, see below.
 
-## Usage
+**Modify book content** by making updates to the content in your favorite IDE.
+It is as simple as adding/editing the Markdown (`.md`). Jupyter Notebook (`.ipynb`), or Jupyter Book configuration (`.yml`) files and merging to `main`.
+No local dependencies needed!
 
-This is a template repository, so you can [create your own repository from this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template).
+### Preview site before you push
 
-### Setup
-
-1. Follow the docs to edit your repository settings and tell pages to deploy from `gh-pages` branch. See [Publishing from a branch](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch)
-2. Use the drop down menu to tell GitHub pages to deploy from `/root` on that branch
-3. Manually trigger a workflow on the `main` branch to verify everything is working.
-4. Cruise through the `book/_config.yml` to update everything.
-
-![github pages settings](https://user-images.githubusercontent.com/6315292/208469724-203ad297-d4b0-4205-88a3-33988e3d4889.png)
-
-### Modify book content
-
-Making updates to the content can be as simple as adding/editing the Markdown or Jupyter Book YAML files and pushing to `main`. No depenedencies needed!
-
-#### Preview site before you push
-
-If you want to build the site locally, you need to install Jupyter Book.
+Optionally, if you want to build the site locally, you need to install Jupyter Book.
 This requires Python 3.9 or higher, which you should run in a virtual environment.
 
 To use a virtual environment...
@@ -56,7 +50,7 @@ source env/bin/activate
 Install requirements
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements-book.txt
 ```
 
 Make whatever changes you want to the site inside the `book/` directory.
