@@ -7,7 +7,7 @@ that is automatically built with [GitHub Actions](https://docs.github.com/en/act
 
 ## Using for class
 
-Browsing the website will show *most* of the content. The Jupyter Notebooks can be easily opened in Google Colab with the launch button:rocket: at the top right of the page.
+Browsing the website will show *most* of the content. The Jupyter Notebooks can be easily opened in Google Colab with the launch button :rocket: at the top right of the page.
 But there are a few lessons where there is additional code outside of the Jupyter Notebooks. In those instances, you can do any one of the following:
 
 1. Shallow clone of the repository, using the `--depth 1` flag.
