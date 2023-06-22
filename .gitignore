@@ -8,6 +8,12 @@
 # Things for training notebooks
 *.zip
 
+# TensorFlow models
+*.tflite
+*.pb
+variables.index
+variables.data*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
