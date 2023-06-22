@@ -1,6 +1,6 @@
 # ECE 495: AI Hardware Applications
 
-**Live website:** https://usafa-ece.github.io/ai-hardware
+**Live website:** [https://usafa-ece.github.io/ai-hardware](https://usafa-ece.github.io/ai-hardware)
 
 Contains all course code and the [Jupyter Book](https://jupyterbook.org/en/stable/intro.html) static website to [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
 that is automatically built with [GitHub Actions](https://docs.github.com/en/actions).
