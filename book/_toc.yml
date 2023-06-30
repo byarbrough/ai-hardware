@@ -5,12 +5,14 @@ format: jb-book
 root: intro
 parts:
   - caption: Prediction
+    numbered: true
     chapters:
       - file: prediction/hello-colab
       - file: prediction/prediction-machines
       - file: prediction/kmeans
       - file: prediction/dimensionality
   - caption: Neural Networks
+    numbered: true
     chapters:
       - file: dnn/neuralnet
       - file: dnn/gpu
