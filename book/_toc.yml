@@ -21,9 +21,10 @@ parts:
       - file: dnn/dnn-explore
       - file: dnn/convolution
       - file: dnn/cat-dog/transfer_learning
-      - file: dnn/cat-dog/tflite_catdog
+      - file: dnn/cat-dog/tflite_convert
       - file: dnn/tflite_pi
-      - file: dnn/cat_dog_workdayworkday
+      - file: dnn/workday1
+      - file: dnn/workday2
       - file: dnn/cat-dog/live-cat.md
       - file: dnn/cc-dnn
   - caption: Tensorflow Lite Micro
