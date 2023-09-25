@@ -27,6 +27,10 @@ parts:
       - file: dnn/workday2
       - file: dnn/cat-dog/live-cat.md
       - file: dnn/cc-dnn
+  - caption: NVIDIA Jetson
+    numbered: true
+    chapters:
+      - file: jetson/containerization.md
   - caption: Tensorflow Lite Micro
     numbered: true
     chapters:
