@@ -170,3 +170,42 @@ To minimize file size, put your Dockerfile in a directory that only has what you
 
 After building the image you can push it to a container registry.
 Then you can pull it to somewhere else!
+
+## Tensorflow on Jetson
+
+NVIDIA builds and publishes ML containers optimized for GPU acceleration.
+They can be found at [NVIDIA NCG Catalog](https://catalog.ngc.nvidia.com/containers).
+
+Here is a Hello World for GPU acceleration on the Jetson Orin Nano:
+
+#### Hello World
+
+Browse to [Tensorflow Container for Jetson and Jetpack](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/l4t-tensorflow).
+Read the page and check to make sure version match up.
+
+Pull the image... it's several GB...
+
+```bash
+sudo docker pull nvcr.io/nvidia/l4t-tensorflow:r35.3.1-tf2.11-py3
+```
+
+Run the container and start an interactive session.
+
+```bash
+sudo docker run -it --rm --runtime nvidia --network host nvcr.io/nvidia/l4t-tensorflow:r35.3.1-tf2.11-py3
+```
+
+Now, inside the container, we'll run an excerpt from the Hello Colab script.
+
+The script is hosted [as a gist](https://gist.github.com/byarbrough/442209e580349fd55f839e4d23e8794d).
+
+```bash
+# Will download the script into the container
+curl -LO https://gist.githubusercontent.com/byarbrough/442209e580349fd55f839e4d23e8794d/raw/b10c21f10996732929b690e464e8ab468067059a/tf_gpu_hello.py
+# Verify it, because we don't blindly trust things
+less tf_gpu_hello.py
+# Run it
+python3 tf_gpu_hello.py
+```
+
+Or copy and paste from the gist.
