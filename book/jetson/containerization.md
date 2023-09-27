@@ -135,3 +135,38 @@ Together with [buildah](https://buildah.io/) and [skopeo](https://github.com/con
 
 Overall, I like podman better... but that's not the way the industry is leaning ☹️
 ```
+
+### Build Dockerfile
+
+What if you want to customize your container?
+
+Remember **containers are supposed to be immutable** so
+you shouldn't modify them while running.
+
+Instead, you can build your own custom container!
+
+Create a file named `Dockerfile`, such as the example below
+and then build image and run the container.
+
+```dockerfile
+# Example to add a package and change the default command
+# Build with `docker build -t alpine-pubip .`
+# Run with `docker run --rm alpine-pubip` to display host public IP address
+# Run with `docker run --rm -it alpine-pubip /bin/sh` to launch shell
+FROM alpine:3
+
+RUN apk add curl
+
+CMD ["/usr/bin/curl", "-s", "ifconfig.me"]
+
+```
+
+The `-t` flag specifies the flag with which you wish to name your new image.
+
+```{tip}
+By default, `build` looks at all the files in a directory.
+To minimize file size, put your Dockerfile in a directory that only has what you need.
+```
+
+After building the image you can push it to a container registry.
+Then you can pull it to somewhere else!
