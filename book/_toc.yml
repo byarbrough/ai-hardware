@@ -33,6 +33,7 @@ parts:
       - file: jetson/containerization
       - file: jetson/diffusion
       - file: jetson/container-pt2
+      - file: jetson/yolo
   - caption: Tensorflow Lite Micro
     numbered: true
     chapters:
