@@ -48,7 +48,8 @@ parts:
     chapters:
       - file: nlp/text-vectorization
       - file: nlp/transformers
-      - file: nlp/llm
+      - file: nlp/llm-emergence
+      - file: nlp/prompt-engineering
       - file: nlp/llm-redteam1
       - file: nlp/llm-redteam2
       - file: nlp/cc-nlp
