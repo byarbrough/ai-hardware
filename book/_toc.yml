@@ -50,19 +50,26 @@ parts:
       - file: nlp/transformers
       - file: nlp/llm-emergence
       - file: nlp/prompt-engineering
-      - file: nlp/llm-redteam1
-      - file: nlp/llm-redteam2
-      - file: nlp/cc-nlp
+      # - file: nlp/llm-redteam1
+      # - file: nlp/llm-redteam2
+      # - file: nlp/cc-nlp
   - caption: Final Block
     numbered: true
     chapters:
+      - file: final/final-project
       - file: final/project1
       - file: final/project2
       - file: final/project3
       - file: final/project4
+      - file: final/supercomputers
       - file: final/project5
-      - file: final/ethics
-      - file: final/military-apps
+      - file: final/project6
+      - file: final/bias-ethics
+      # - file: final/military-apps
+      - file: final/cc-final
+      - file: nlp/llm-redteam1
+      - file: nlp/llm-redteam2
+      - file: final/wrapup
 # - caption: Data Wrangling
 #   numbered: true
 #   chapters:
