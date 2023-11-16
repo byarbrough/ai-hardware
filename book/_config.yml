@@ -39,6 +39,6 @@ html:
   use_repository_button: true
 
 # Uncomment to use mermaid diagrams
-# sphinx:
-  # extra_extensions:
-    # - sphinxcontrib.mermaid
+sphinx:
+  extra_extensions:
+    - sphinxcontrib.mermaid
