@@ -5,16 +5,18 @@ format: jb-book
 root: intro
 parts:
   - caption: Machine Prediction
-    numbered: true
+    numbered: 2
     chapters:
       - file: b1-prediction/hello-colab
       - file: b1-prediction/prediction-machines
       - file: b1-prediction/kmeans
-      - file: b1-prediction/dimensionality
+      # - file: b1-prediction/dimensionality
+      # - file: b1-prediction/evaluating
       - file: b1-prediction/mnist-dnn
+      - file: b1-prediction/flask
       - file: b1-prediction/cc-prediction
   - caption: Neural Networks
-    numbered: true
+    numbered: 2
     chapters:
       - file: b2-dnn/neuralnet
       - file: b2-dnn/gpu
@@ -27,14 +29,14 @@ parts:
       - file: b2-dnn/cat-dog/live-cat
       - file: b2-dnn/cc-dnn
   - caption: NVIDIA Jetson
-    numbered: true
+    numbered: 2
     chapters:
       - file: jetson/containerization
       - file: jetson/diffusion
       - file: jetson/container-pt2
       - file: jetson/yolo
   - caption: Tensorflow Lite Micro
-    numbered: true
+    numbered: 2
     chapters:
       - file: tfm/m4-cortex
       - file: tfm/wake-word
@@ -43,7 +45,7 @@ parts:
 #     - file: tfm/magic-wand
 #     - file: tfm/cc-tfm
   - caption: Natural Language Processing
-    numbered: true
+    numbered: 2
     chapters:
       - file: nlp/text-vectorization
       - file: nlp/transformers
@@ -53,7 +55,7 @@ parts:
       # - file: nlp/llm-redteam2
       # - file: nlp/cc-nlp
   - caption: Final Block
-    numbered: true
+    numbered: 2
     chapters:
       - file: final/final-project
       - file: final/project1
